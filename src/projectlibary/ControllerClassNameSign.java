@@ -9,12 +9,8 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.layout.FlowPane;
-import javafx.scene.layout.VBox;
 
-public class ControllerSignIN {
-
-    @FXML
-    private VBox vBox;
+public class ControllerClassNameSign {
 
     @FXML
     private Button buttonMangBorrow;
@@ -23,30 +19,24 @@ public class ControllerSignIN {
     private Button buttonMangBook;
 
     @FXML
-    public FlowPane paneSignIN;
+    private FlowPane paneSignIN;
 
     @FXML
     private Button buttonMangBorroBook;
 
     @FXML
-    void ManagmentBookHandel(ActionEvent event) {
+    void ButtonMange(ActionEvent event) {
 
     }
 
     @FXML
-    void managmentBorrowerHandel(ActionEvent event) {
+    void buttonMangBookHundel(ActionEvent event) {
 
     }
 
     @FXML
-    void f8f8f8(ActionEvent event) {
-
-    }
-
-    @FXML
-    void ManagmentBorrowBookHandel(ActionEvent event) {
+    void buttonMangHundel(ActionEvent event) {
 
     }
 
 }
-

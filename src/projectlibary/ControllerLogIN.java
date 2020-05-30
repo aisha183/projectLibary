@@ -15,6 +15,7 @@ import javafx.fxml.FXML;
 import static javafx.application.ConditionalFeature.FXML;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -54,16 +55,19 @@ public class ControllerLogIN {
 
     @FXML
     public FlowPane paneLOgIn;
-    private Stage primaryStage;
+    private Stage Stage = new Stage();
 
     @FXML
     private void signInHandel(ActionEvent event) throws IOException {
-        if (textFiledUser.getText().equals("Aisha")) {
-             ControllerSignIN c1=new ControllerSignIN();
-                      paneLOgIn  = c1.paneSignIN;
-                      Scene scene=new Scene(paneLOgIn);
-                      primaryStage.show();
-            
-        }
+        if (textFiledUser.getText().equals("Aisha")){
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Si.fxml"));
+        Parent root = loader.load();
+        Scene scene = new Scene(root);
+       
+        Stage.setTitle("Lipary *_*");
+        Stage.setScene(scene);
+        Stage.show();
+
     }
+}
 }

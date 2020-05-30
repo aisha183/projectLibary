@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<FlowPane fx:id="paneSignIN" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="687.0" prefWidth="792.0" style="-fx-background-color: #8b4513;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"fx:controller="projectlibary.ControllerClassNameSign">
+   <children>
+      <VBox alignment="CENTER" prefHeight="572.0" prefWidth="416.0" style="-fx-background-image: url(&quot;file:/C:/Users/PC/Desktop/Java_P/book.jpg&quot;);">
+         <children>
+            <Button fx:id="buttonMangBorrow" mnemonicParsing="false" onAction="#ButtonMange" prefHeight="38.0" prefWidth="210.0" style="-fx-background-color: #191970;" text="Button Mang Borrow" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="buttonMangBook" mnemonicParsing="false" onAction="#buttonMangBookHundel" prefHeight="40.0" prefWidth="209.0" style="-fx-background-color: #191970;" text="Button Mang Book" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="buttonMangBorroBook" mnemonicParsing="false" onAction="#buttonMangHundel" style="-fx-background-color: #191970;" text="buttonMangBorroBook" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</FlowPane>

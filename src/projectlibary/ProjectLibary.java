@@ -9,6 +9,7 @@ import java.util.Map;
 import java.util.TreeMap;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
@@ -28,11 +29,9 @@ public class ProjectLibary extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        ControllerLogIN log=new ControllerLogIN();
-        log.paneLOgIn = FXMLLoader.load(getClass().getResource("logIN.fxml"));
-        Map<String, Pane> mapPanes = new TreeMap<>();
-        mapPanes.put("LogIn", log.paneLOgIn);
-        Scene scene = new Scene(mapPanes.get("LogIn"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("logIN.fxml"));
+        Parent root = loader.load();
+        Scene scene = new Scene(root);
         primaryStage.setTitle("Lipary *_*");
         primaryStage.setScene(scene);
         primaryStage.show();
